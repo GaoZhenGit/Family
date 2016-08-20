@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:use="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_user"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="@dimen/half_button_height"
+    android:background="@drawable/item_click">
+
+    <com.gz.family.view.CircleImageView
+        android:id="@+id/me_avatar"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:src="@mipmap/default_avatar"
+        use:round="3dp" />
+
+    <TextView
+        android:id="@+id/me_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/me_avatar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/me_avatar"
+        android:layout_toRightOf="@+id/me_avatar"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_middle" />
+
+    <ImageView
+        android:id="@+id/me_sex"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@+id/me_name"
+        android:layout_toEndOf="@+id/me_name"
+        android:layout_toRightOf="@+id/me_name"
+        android:scaleType="fitXY"
+        android:src="@mipmap/male" />
+
+    <TextView
+        android:id="@+id/me_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/me_name"
+        android:layout_alignStart="@+id/me_name"
+        android:layout_below="@+id/me_name"
+        android:text="个性签名"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_right"
+        android:src="@mipmap/icon_right_chevron_grey" />
+
+</RelativeLayout>

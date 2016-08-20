@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_selector_titlecolor_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:text="请选择与对方的关系"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <Spinner
+        android:id="@+id/spinner_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="您称呼TA："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <EditText
+            android:id="@+id/relation_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/abc_edit_text_material" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_be_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="TA称呼您："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <EditText
+            android:id="@+id/be_relation_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/abc_edit_text_material" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="验证申请："
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <EditText
+            android:id="@+id/invitation_talk_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/abc_edit_text_material" />
+    </LinearLayout>
+</LinearLayout>

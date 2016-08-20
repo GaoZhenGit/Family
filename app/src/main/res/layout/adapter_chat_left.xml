@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_avator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/default_avatar"/>
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="wrap_content"
+        android:maxWidth="250dp"
+        android:minWidth="40dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/img_avator"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        tools:text="在吗在吗在吗在吗在吗"
+        android:background="@mipmap/chat_left"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/tv_chat"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>

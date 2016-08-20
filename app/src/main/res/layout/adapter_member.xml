@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/item_click">
+    <ImageView
+        android:id="@+id/member_avater"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@mipmap/default_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left"/>
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尊姓大名"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large"
+        android:layout_alignTop="@+id/member_avater"
+        android:layout_toRightOf="@+id/member_avater"
+        android:layout_toEndOf="@+id/member_avater"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="12dp" />
+    <TextView
+        android:id="@+id/member_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="220dp"
+        android:maxLines="2"
+        android:text="我的地盘听我的，哈哈"
+        android:layout_below="@+id/member_name"
+        android:layout_alignLeft="@+id/member_name"
+        android:layout_alignStart="@+id/member_name" />
+    <TextView
+        android:id="@+id/member_tag"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="爸爸"
+        android:textSize="@dimen/text_size_middle"
+        android:textColor="@color/color_theme"
+        android:background="@drawable/tag_round"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/margin_right"/>
+
+</RelativeLayout>

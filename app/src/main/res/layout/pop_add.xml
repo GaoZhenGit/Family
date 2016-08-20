@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pop_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/title_bar_height"
+        android:background="@mipmap/pop_add_bg2_shadow"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/btn_search_add"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="查找添加"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle"
+            android:background="@drawable/btn_selector_titlecolor_light"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/btn_code_add"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="二维码添加"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle"
+            android:background="@drawable/btn_selector_titlecolor_light"/>
+
+    </LinearLayout>

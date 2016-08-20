@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gz.family" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity android:name=".activity.MemberInfoActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.SearchFamilyActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.ChatActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.InvitationActivity"
+            android:launchMode="singleTask"/>
+        <service android:name=".Mqtt.MService"/>
+        <receiver android:name=".Mqtt.MReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

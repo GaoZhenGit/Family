@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defalut">
+    <include
+        layout="@layout/title_bar"/>
+    <include
+        layout="@layout/member_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/member_info_setdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_centerVertical="true"
+            android:text="设置备注和标签"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_middle"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_member_info_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/btn_selector_titlecolor_light"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="发消息"
+        android:textSize="@dimen/text_size_middle"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="160dp"/>
+</LinearLayout>
